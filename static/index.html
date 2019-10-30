@@ -1,26 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Hello, world!</title>
+    <title>Awesome image server v1.3.37</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-
-    <script src="jquery-3.3.1.slim.min.js"></script>
-    <script src="popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        var app = Elm.Main.init({
-            node: document.getElementById('app')
-        });
-    </script>
+  <p>Awesome image server ...</p>
+  <button id="leftArrow" onclick="onClickLeftArrow()">prev</button>
+  <button id="rightArrow" onclick="onClickRightArrow()">next</button>
+  <div id="img"></div>
+  <script>
+  window.onload = () => {
+      run();
+  }
+  </script>
   </body>
+</html>
